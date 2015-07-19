@@ -14,15 +14,16 @@ class IdiomData: NSObject {
     var hanzi:String?
     var jieshi:String?
     var biaoji:String?
+    var chengyuId:NSInteger?
     
     
-    init(aPinyin:String, aHanzi:String,aJieshi:String, aBiaoji:String ) {
+    init(aPinyin:String, aHanzi:String,aJieshi:String, aBiaoji:String,aChengyuId:NSInteger ) {
         
         pinyin = aPinyin
         hanzi = aHanzi
         jieshi = aJieshi
         biaoji = aBiaoji
-
+        chengyuId = aChengyuId
     }
     
     
