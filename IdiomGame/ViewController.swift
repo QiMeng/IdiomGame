@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        var model = IdiomData(aPinyin: "pin", aHanzi: "hanzi", aJieshi: "jieshi", aBiaoji: "biaoji" ,aChengyuId:1)
+        var model = IdiomInfo(aPinyin: "pin", aHanzi: "hanzi", aJieshi: "jieshi", aBiaoji: "biaoji" ,aChengyuId:1)
         
         
         

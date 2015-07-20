@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
     }
     
     func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int{
-        return 20
+        return 24
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView!) -> Int{
@@ -34,15 +34,14 @@ class GameViewController: UIViewController {
         
         var cell:GameCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("GameCollectionViewCell", forIndexPath: indexPath) as! GameCollectionViewCell
 
+        if(indexPath.row < 24 - 20){
+            cell.setbackClick()
+        }
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
-        return CGSizeMake(40, 40)
-    }
-//    
-//    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
-//        return UIEdgeInsetsMake(2, 2, 2, 2);
+//    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
+//        return CGSizeMake(40, 40)
 //    }
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!){

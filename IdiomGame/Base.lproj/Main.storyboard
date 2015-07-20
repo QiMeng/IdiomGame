@@ -206,16 +206,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-Z3-hfc">
-                                                    <rect key="frame" x="-2" y="0.0" width="42" height="40"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNB-c2-TWZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="字">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="titleBtnClick:" destination="djg-g2-347" eventType="touchUpInside" id="e9v-J6-3VY"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.71547294660000005" blue="0.3333123912" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tNB-c2-TWZ" secondAttribute="trailing" id="6yJ-G0-a2l"/>
+                                            <constraint firstItem="tNB-c2-TWZ" firstAttribute="top" secondItem="djg-g2-347" secondAttribute="top" id="YiT-ed-42f"/>
+                                            <constraint firstAttribute="bottom" secondItem="tNB-c2-TWZ" secondAttribute="bottom" id="bBw-OJ-Zso"/>
+                                            <constraint firstItem="tNB-c2-TWZ" firstAttribute="leading" secondItem="djg-g2-347" secondAttribute="leading" id="sVM-WC-5i7"/>
+                                        </constraints>
+                                        <size key="customSize" width="40" height="40"/>
+                                        <connections>
+                                            <outlet property="titleBtn" destination="tNB-c2-TWZ" id="8RR-cB-X3L"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C64F1101B5B38300022510B /* First.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C64F10F1B5B38300022510B /* First.png */; };
-		6C64F1121B5B426E0022510B /* IdiomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1111B5B426E0022510B /* IdiomData.swift */; };
+		6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1111B5B426E0022510B /* IdiomInfo.swift */; };
 		6C64F1141B5B46140022510B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1131B5B46140022510B /* GameViewController.swift */; };
 		6C64F1161B5B476A0022510B /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */; };
 		6C767DA41B59FDDB00DD4289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C767DA31B59FDDB00DD4289 /* AppDelegate.swift */; };
@@ -17,6 +17,9 @@
 		6C767DAB1B59FDDB00DD4289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C767DAA1B59FDDB00DD4289 /* Images.xcassets */; };
 		6C767DAE1B59FDDB00DD4289 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C767DAC1B59FDDB00DD4289 /* LaunchScreen.xib */; };
 		6C767DBA1B59FDDB00DD4289 /* IdiomGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C767DB91B59FDDB00DD4289 /* IdiomGameTests.swift */; };
+		6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */; };
+		6CC47A371B5D180A00EBE33F /* IdiomProtocolForSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */; };
+		6CC47A391B5D28B900EBE33F /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A381B5D28B900EBE33F /* WordInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		6C64F10F1B5B38300022510B /* First.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = First.png; sourceTree = "<group>"; };
-		6C64F1111B5B426E0022510B /* IdiomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomData.swift; sourceTree = "<group>"; };
+		6C64F1111B5B426E0022510B /* IdiomInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdiomInfo.swift; path = IdiomGame/IdiomInfo.swift; sourceTree = "<group>"; };
 		6C64F1131B5B46140022510B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		6C767D9E1B59FDDA00DD4289 /* IdiomGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdiomGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		6C767DB31B59FDDB00DD4289 /* IdiomGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdiomGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C767DB81B59FDDB00DD4289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C767DB91B59FDDB00DD4289 /* IdiomGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdiomGameTests.swift; sourceTree = "<group>"; };
+		6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocol.swift; sourceTree = "<group>"; };
+		6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocolForSQL.swift; sourceTree = "<group>"; };
+		6CC47A381B5D28B900EBE33F /* WordInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,8 @@
 		6C767D951B59FDDA00DD4289 = {
 			isa = PBXGroup;
 			children = (
+				6CC47A351B5D17CF00EBE33F /* DAL */,
+				6CC47A301B5D156100EBE33F /* BLL */,
 				6C64F10E1B5B38300022510B /* Resoure */,
 				6C767DA01B59FDDA00DD4289 /* IdiomGame */,
 				6C767DB61B59FDDB00DD4289 /* IdiomGameTests */,
@@ -133,11 +141,44 @@
 		6C767DC61B5A05F200DD4289 /* ControlView */ = {
 			isa = PBXGroup;
 			children = (
-				6C64F1111B5B426E0022510B /* IdiomData.swift */,
 				6C64F1131B5B46140022510B /* GameViewController.swift */,
 				6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */,
 			);
 			name = ControlView;
+			sourceTree = "<group>";
+		};
+		6CC47A301B5D156100EBE33F /* BLL */ = {
+			isa = PBXGroup;
+			children = (
+				6CC47A321B5D15A800EBE33F /* Models */,
+				6CC47A311B5D159100EBE33F /* Protocols */,
+			);
+			name = BLL;
+			sourceTree = "<group>";
+		};
+		6CC47A311B5D159100EBE33F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		6CC47A321B5D15A800EBE33F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C64F1111B5B426E0022510B /* IdiomInfo.swift */,
+				6CC47A381B5D28B900EBE33F /* WordInfo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6CC47A351B5D17CF00EBE33F /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */,
+			);
+			name = DAL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,11 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC47A371B5D180A00EBE33F /* IdiomProtocolForSQL.swift in Sources */,
+				6CC47A391B5D28B900EBE33F /* WordInfo.swift in Sources */,
+				6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */,
 				6C64F1141B5B46140022510B /* GameViewController.swift in Sources */,
 				6C64F1161B5B476A0022510B /* GameCollectionViewCell.swift in Sources */,
 				6C767DA61B59FDDB00DD4289 /* ViewController.swift in Sources */,
 				6C767DA41B59FDDB00DD4289 /* AppDelegate.swift in Sources */,
-				6C64F1121B5B426E0022510B /* IdiomData.swift in Sources */,
+				6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

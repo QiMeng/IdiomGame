@@ -9,5 +9,25 @@
 import UIKit
 
 class GameCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var titleBtn: UIButton!
+    
+    @IBAction func titleBtnClick(sender: UIButton) {
+        
+        sender.selected = !sender.selected
+        if(sender.selected ){
+            sender.backgroundColor = UIColor.redColor()
+        }else{
+            sender.backgroundColor = UIColor.whiteColor()
+        }
+        print("点击按钮")
+    }
+    
+    func setbackClick()
+    {
+        titleBtn.removeFromSuperview()
+        self.contentView.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clearColor()
+        self.userInteractionEnabled = false
+    }
     
 }

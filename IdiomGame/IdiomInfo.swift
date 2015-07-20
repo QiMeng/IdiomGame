@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IdiomData: NSObject {
+class IdiomInfo: NSObject {
    
     var pinyin:String?
     var hanzi:String?
