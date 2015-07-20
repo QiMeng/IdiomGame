@@ -20,6 +20,8 @@
 		6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */; };
 		6CC47A371B5D180A00EBE33F /* IdiomProtocolForSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */; };
 		6CC47A391B5D28B900EBE33F /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A381B5D28B900EBE33F /* WordInfo.swift */; };
+		6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */; };
+		96F6B68F0BBB02B95C2D7F6E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E04A6FC4A99A43A6218F42 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32E04A6FC4A99A43A6218F42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C64F10F1B5B38300022510B /* First.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = First.png; sourceTree = "<group>"; };
 		6C64F1111B5B426E0022510B /* IdiomInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdiomInfo.swift; path = IdiomGame/IdiomInfo.swift; sourceTree = "<group>"; };
 		6C64F1131B5B46140022510B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +53,10 @@
 		6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocol.swift; sourceTree = "<group>"; };
 		6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocolForSQL.swift; sourceTree = "<group>"; };
 		6CC47A381B5D28B900EBE33F /* WordInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
+		6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomModel.swift; sourceTree = "<group>"; };
+		6CFF676E1B5D319800A58E12 /* IdiomGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdiomGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8E937C5AA0B5F96D62DE9D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EC2AF9A387AD0BF7FA514214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F6B68F0BBB02B95C2D7F6E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D733285DA356E87B7B232C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E937C5AA0B5F96D62DE9D7 /* Pods.debug.xcconfig */,
+				EC2AF9A387AD0BF7FA514214 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6C64F10E1B5B38300022510B /* Resoure */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +104,8 @@
 				6C767DA01B59FDDA00DD4289 /* IdiomGame */,
 				6C767DB61B59FDDB00DD4289 /* IdiomGameTests */,
 				6C767D9F1B59FDDA00DD4289 /* Products */,
+				0D733285DA356E87B7B232C7 /* Pods */,
+				D1506843EAE736C08276D740 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +128,7 @@
 				6C767DAA1B59FDDB00DD4289 /* Images.xcassets */,
 				6C767DAC1B59FDDB00DD4289 /* LaunchScreen.xib */,
 				6C767DA11B59FDDA00DD4289 /* Supporting Files */,
+				6CFF676E1B5D319800A58E12 /* IdiomGame-Bridging-Header.h */,
 			);
 			path = IdiomGame;
 			sourceTree = "<group>";
@@ -169,6 +189,7 @@
 			children = (
 				6C64F1111B5B426E0022510B /* IdiomInfo.swift */,
 				6CC47A381B5D28B900EBE33F /* WordInfo.swift */,
+				6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -181,6 +202,14 @@
 			name = DAL;
 			sourceTree = "<group>";
 		};
+		D1506843EAE736C08276D740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E04A6FC4A99A43A6218F42 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C767DBD1B59FDDB00DD4289 /* Build configuration list for PBXNativeTarget "IdiomGame" */;
 			buildPhases = (
+				0A6E51E3E3F757607CFCD789 /* Check Pods Manifest.lock */,
 				6C767D9A1B59FDDA00DD4289 /* Sources */,
 				6C767D9B1B59FDDA00DD4289 /* Frameworks */,
 				6C767D9C1B59FDDA00DD4289 /* Resources */,
+				785287046AD81C6D02D60759 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +308,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A6E51E3E3F757607CFCD789 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		785287046AD81C6D02D60759 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C767D9A1B59FDDA00DD4289 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -287,6 +351,7 @@
 				6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */,
 				6C64F1141B5B46140022510B /* GameViewController.swift in Sources */,
 				6C64F1161B5B476A0022510B /* GameCollectionViewCell.swift in Sources */,
+				6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */,
 				6C767DA61B59FDDB00DD4289 /* ViewController.swift in Sources */,
 				6C767DA41B59FDDB00DD4289 /* AppDelegate.swift in Sources */,
 				6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */,
@@ -416,23 +481,29 @@
 		};
 		6C767DBE1B59FDDB00DD4289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E937C5AA0B5F96D62DE9D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IdiomGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IdiomGame/IdiomGame-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		6C767DBF1B59FDDB00DD4289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2AF9A387AD0BF7FA514214 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IdiomGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IdiomGame/IdiomGame-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -9,6 +9,6 @@
 import Foundation
 
 protocol IdiomProtocol {
-    func randomIdiomForGame() ->[IdiomData]
+    func randomIdiomForGame() -> RACSignal
     
 }

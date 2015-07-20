@@ -9,8 +9,19 @@
 import UIKit
 
 class IdiomProtocolForSQL: NSObject , IdiomProtocol {
-    func randomIdiomForGame() -> [IdiomData] {
-        var idioms = [IdiomData]()
-        return idioms
+    
+    func randomIdiomForGame() -> RACSignal {
+        
+        return RACSignal.createSignal({ (subscriber: RACSubscriber!) -> RACDisposable! in
+            
+            let info = ["狼心狗肺","善尽天良","恩将仇报"]
+            subscriber.sendNext(info)
+            subscriber.sendCompleted()
+            
+            return RACDisposable(block: {
+//                task.cancel()
+            })
+//
+        }).deliverOn(RACScheduler.mainThreadScheduler())
     }
 }

@@ -11,9 +11,14 @@ import UIKit
 class GameViewController: UIViewController {
 
     @IBOutlet weak var collectionview: UICollectionView!
+    
+    dynamic var viewModel: IdiomModel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
