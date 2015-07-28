@@ -17,32 +17,35 @@ class GameViewController: UIViewController {
     let ALLCELLS = 36
     dynamic var viewModel: IdiomModel!
     dynamic var idiomProtocolSQL: IdiomProtocolForSQL!
-    
+    var soundModel : SoundModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.soundModel = SoundModel.new()
         
-        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         self.idiomProtocolSQL = IdiomProtocolForSQL.new()
         
         self.viewModel = IdiomModel(aIdiomProtocol: self.idiomProtocolSQL)
         self.viewModel.idiomsLoadCommand.execute(nil)
         
-        self.viewModel.wordsLoadCommand.executionSignals.subscribeNext { (value :AnyObject!) -> Void in
-            self.collectionview.reloadData()
+        self.viewModel.wordsLoadCommand.executionSignals.subscribeNext {[weak self] (value :AnyObject!) -> Void in
+            self!.collectionview.reloadData()
         }
         
         
-        self.viewModel.judgeIdiomCommand.executionSignals.subscribeNext { (value :AnyObject!) -> Void in
+        self.viewModel.judgeIdiomCommand.executionSignals.subscribeNext {[weak self] (value :AnyObject!) -> Void in
             let idiomsLoadSignal = value as! RACSignal
             
             idiomsLoadSignal.subscribeNext({ (value2 :AnyObject!) -> Void in
                 
                 let idiom = value2 as! IdiomInfo
-                self.titleforIdiom.text = idiom.hanzi
-                self.explainForIdiom.text = idiom.jieshi
+                self!.titleforIdiom.text = idiom.hanzi
+                self!.explainForIdiom.text = idiom.jieshi
+                
+                let rightidiom = idiom.hanzi?.hasPrefix("错误成语")
+                self!.soundModel.soundRightIdiom(rightidiom!)
            
             })
-            self.collectionview.reloadData()
+            self!.collectionview.reloadData()
             
         }
         
@@ -70,7 +73,7 @@ class GameViewController: UIViewController {
     @IBAction func musicSwitch(sender: UIButton) {
         //音乐开关
         sender.selected = !sender.selected
-        SoundModel().soundBackPlay(sender.selected)
+        self.soundModel.soundBackPlay(sender.selected)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -100,7 +103,7 @@ class GameViewController: UIViewController {
             cell.initTitleClickBlock({[weak self] (awordInfo, selected) -> () in
 
                 self!.viewModel.addOrRemoveWordToSelectedWords(awordInfo, isAdd: selected)
-                SoundModel().soundTouchBtn()
+                self!.soundModel.soundTouchBtn()
                 
             })
         }

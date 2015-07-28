@@ -8,10 +8,12 @@
 
 import Foundation
 
-class SoundModel: NSObject {
+class SoundModel: NSObject,AVAudioPlayerDelegate {
    
-    dynamic var audioPlayerBack:AVAudioPlayer!
+    var audioPlayerBack:AVAudioPlayer!
     var audioPlayerTouchBtn:AVAudioPlayer!
+    var audioPlayerIdiom:AVAudioPlayer!
+    
     func loadSoundBack(filename:NSString) {
         let url = NSBundle.mainBundle().URLForResource(filename as String, withExtension: "aiff")
         var error:NSError? = nil
@@ -22,20 +24,7 @@ class SoundModel: NSObject {
         
         self.audioPlayerBack = AVAudioPlayer(contentsOfURL: url, error: &error)
         self.audioPlayerBack.prepareToPlay()
-    }
-    
-    func loadSoundTouchBtn()
-    {
-        let url = NSBundle.mainBundle().URLForResource("2", withExtension: "aiff")
-        var error:NSError? = nil
-        
-        let session = AVAudioSession.sharedInstance()
-        session.setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        session.setActive(true, error: nil)
-        
-        self.audioPlayerTouchBtn = AVAudioPlayer(contentsOfURL: url, error: &error)
-        self.audioPlayerTouchBtn.prepareToPlay()
-
+        self.audioPlayerBack.volume = 5
     }
     func soundBackPlay(playSound:Bool)
     {
@@ -50,23 +39,60 @@ class SoundModel: NSObject {
         }
     }
     
+    func loadSoundTouchBtn()
+    {
+        let url = NSBundle.mainBundle().URLForResource("2", withExtension: "aiff")
+        var error:NSError? = nil
+        
+        let session = AVAudioSession.sharedInstance()
+        session.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        session.setActive(true, error: nil)
+        
+        self.audioPlayerTouchBtn = AVAudioPlayer(contentsOfURL: url, error: &error)
+        self.audioPlayerTouchBtn.prepareToPlay()
+        self.audioPlayerTouchBtn.delegate = self
+
+    }
     func soundTouchBtn()
     {
         self.loadSoundTouchBtn()
         self.audioPlayerTouchBtn.play()
     }
     
-//    func soundRightIdiom(arightdiom:Bool)
-//    {
-//        if arightdiom
-//        {
-//            self.loadSound("2")
-//            self.audioplayer.play()
-//        }else
-//        {
-//            self.loadSound("2")
-//            self.audioplayer.play()
+
+    
+    func loadRightIdiom(arightIdiom:Bool)
+    {
+        let url = NSBundle.mainBundle().URLForResource("2", withExtension: "aiff")
+        var error:NSError? = nil
+        
+        let session = AVAudioSession.sharedInstance()
+        session.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        session.setActive(true, error: nil)
+        
+        self.audioPlayerIdiom = AVAudioPlayer(contentsOfURL: url, error: &error)
+        self.audioPlayerIdiom.prepareToPlay()
+//        self.audioPlayerTouchBtn.delegate = self
+    }
+    func soundRightIdiom(arightdiom:Bool)
+    {
+        if arightdiom
+        {
+            self.loadRightIdiom(true)
+            self.audioPlayerIdiom.play()
+        }else
+        {
+            self.loadRightIdiom(false)
+            self.audioPlayerIdiom.play()
+        }
+    }
+    //-----AVAudioPlayerDelegate
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool)
+    {
+//        if(player == self.audioPlayerBack && flag == true) {
+//            NSLog("Playback finish." );
 //        }
-//    }
+
+    }
     
 }
