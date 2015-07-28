@@ -10,5 +10,6 @@ import Foundation
 
 protocol IdiomProtocol {
     func randomIdiomForGame() -> RACSignal
-    
+    func updateIdiomWithBiaoji(abiaoji:String,achenyuId:String)
+    func promptIdioms() -> [IdiomInfo]
 }

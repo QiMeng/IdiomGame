@@ -8,3 +8,4 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveViewModel/ReactiveViewModel.h>
+#import "FMDB.h"

@@ -10,13 +10,14 @@ import UIKit
 
 class WordInfo: NSObject {
     
-    var idiomId:NSInteger?
-    var wordName : NSString?
-    var wordImage : UIImage?
+    var idiomId:String?
+    var wordName : String?
+    var wordImageName : String?
     
-    init(aIdiomId : NSInteger , aWordName:NSString , aWordImage :UIImage) {
-        idiomId = aIdiomId
-        wordName = aWordName
-        wordImage = aWordImage
+    init(aIdiomId : String , aWordName:String , aWordImageName :String) {
+        self.idiomId = aIdiomId
+        self.wordName = aWordName
+        self.wordImageName = aWordImageName
     }
+    
 }

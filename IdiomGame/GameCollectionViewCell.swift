@@ -8,25 +8,45 @@
 
 import UIKit
 
+typealias titleBtnSelectBlock = (awordInfo:WordInfo,selected:Bool)-> ()
+
 class GameCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleBtn: UIButton!
+    var wordinfo : WordInfo!
+    
+    var blockTitleBtnClick = titleBtnSelectBlock?()
     
     @IBAction func titleBtnClick(sender: UIButton) {
         
         sender.selected = !sender.selected
-        if(sender.selected ){
-            sender.backgroundColor = UIColor.redColor()
-        }else{
-            sender.backgroundColor = UIColor.whiteColor()
+        
+        if let myblock = self.blockTitleBtnClick
+        {
+            self.blockTitleBtnClick!(awordInfo: self.wordinfo,selected: sender.selected)
         }
-        print("点击按钮")
     }
     
-    func setbackClick()
+    func initTitleClickBlock(mathBlock:titleBtnSelectBlock?)
     {
-        titleBtn.removeFromSuperview()
-        self.contentView.backgroundColor = UIColor.clearColor()
-        self.backgroundColor = UIColor.clearColor()
+        self.blockTitleBtnClick = mathBlock;
+    }
+    
+    func settitle(awordInfo : WordInfo)
+    {
+        self.wordinfo = awordInfo
+        self.titleBtn.hidden = false
+        self.userInteractionEnabled = true
+        self.titleBtn.selected = false
+        self.titleBtn.setTitle(awordInfo.wordName, forState:UIControlState.Normal)
+        self.titleBtn.setBackgroundImage(UIImage(named: "Btn.png") , forState: UIControlState.Normal)
+        self.titleBtn.setBackgroundImage(UIImage(named: "Btn_select.png") , forState: UIControlState.Selected)
+
+        
+    }
+    
+    func setTitleBtnHiden()
+    {
+        self.titleBtn.hidden = true
         self.userInteractionEnabled = false
     }
     

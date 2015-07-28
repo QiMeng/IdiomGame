@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C64F1101B5B38300022510B /* First.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C64F10F1B5B38300022510B /* First.png */; };
+		6C0C7EA21B648AD700797267 /* promptBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0C7EA11B648AD700797267 /* promptBack.png */; };
+		6C498E7E1B63CC9A00999988 /* gameback.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E7A1B63CC9A00999988 /* gameback.png */; };
+		6C498E811B63CF6D00999988 /* btnbegin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */; };
+		6C498E821B63CF6D00999988 /* btnprompt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E801B63CF6D00999988 /* btnprompt@2x.png */; };
+		6C520AED1B6291CD0058A0A5 /* idioms.db in Resources */ = {isa = PBXBuildFile; fileRef = 6C520AEC1B6291CD0058A0A5 /* idioms.db */; };
 		6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1111B5B426E0022510B /* IdiomInfo.swift */; };
 		6C64F1141B5B46140022510B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1131B5B46140022510B /* GameViewController.swift */; };
 		6C64F1161B5B476A0022510B /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */; };
@@ -17,11 +21,18 @@
 		6C767DAB1B59FDDB00DD4289 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C767DAA1B59FDDB00DD4289 /* Images.xcassets */; };
 		6C767DAE1B59FDDB00DD4289 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C767DAC1B59FDDB00DD4289 /* LaunchScreen.xib */; };
 		6C767DBA1B59FDDB00DD4289 /* IdiomGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C767DB91B59FDDB00DD4289 /* IdiomGameTests.swift */; };
+		6CA54B401B5FBC7F002CE7F6 /* Btn_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA54B3E1B5FBC7F002CE7F6 /* Btn_select@2x.png */; };
+		6CA54B421B5FBE7F002CE7F6 /* Btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA54B411B5FBE7F002CE7F6 /* Btn@2x.png */; };
 		6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */; };
 		6CC47A371B5D180A00EBE33F /* IdiomProtocolForSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */; };
 		6CC47A391B5D28B900EBE33F /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC47A381B5D28B900EBE33F /* WordInfo.swift */; };
+		6CD1B0F01B5FD7E30018480C /* GameBegin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD1B0EF1B5FD7E30018480C /* GameBegin.png */; };
+		6CF5C3271B5E9E47002852CF /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C3241B5E9E47002852CF /* RAC.swift */; };
+		6CF5C3281B5E9E47002852CF /* RACObserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C3251B5E9E47002852CF /* RACObserve.swift */; };
+		6CF5C3291B5E9E47002852CF /* RACSignal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5C3261B5E9E47002852CF /* RACSignal+Extensions.swift */; };
 		6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */; };
 		96F6B68F0BBB02B95C2D7F6E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E04A6FC4A99A43A6218F42 /* libPods.a */; };
+		A3D449EC1B6234A0000B5C6D /* PromptIdomsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,11 @@
 
 /* Begin PBXFileReference section */
 		32E04A6FC4A99A43A6218F42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C64F10F1B5B38300022510B /* First.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = First.png; sourceTree = "<group>"; };
+		6C0C7EA11B648AD700797267 /* promptBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = promptBack.png; sourceTree = "<group>"; };
+		6C498E7A1B63CC9A00999988 /* gameback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameback.png; sourceTree = "<group>"; };
+		6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnbegin@2x.png"; sourceTree = "<group>"; };
+		6C498E801B63CF6D00999988 /* btnprompt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnprompt@2x.png"; sourceTree = "<group>"; };
+		6C520AEC1B6291CD0058A0A5 /* idioms.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = idioms.db; sourceTree = "<group>"; };
 		6C64F1111B5B426E0022510B /* IdiomInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdiomInfo.swift; path = IdiomGame/IdiomInfo.swift; sourceTree = "<group>"; };
 		6C64F1131B5B46140022510B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -50,11 +65,18 @@
 		6C767DB31B59FDDB00DD4289 /* IdiomGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdiomGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C767DB81B59FDDB00DD4289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C767DB91B59FDDB00DD4289 /* IdiomGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdiomGameTests.swift; sourceTree = "<group>"; };
+		6CA54B3E1B5FBC7F002CE7F6 /* Btn_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn_select@2x.png"; sourceTree = "<group>"; };
+		6CA54B411B5FBE7F002CE7F6 /* Btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Btn@2x.png"; sourceTree = "<group>"; };
 		6CC47A331B5D16C500EBE33F /* IdiomProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocol.swift; sourceTree = "<group>"; };
 		6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomProtocolForSQL.swift; sourceTree = "<group>"; };
 		6CC47A381B5D28B900EBE33F /* WordInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
-		6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdiomModel.swift; sourceTree = "<group>"; };
+		6CD1B0EF1B5FD7E30018480C /* GameBegin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameBegin.png; sourceTree = "<group>"; };
+		6CF5C3241B5E9E47002852CF /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
+		6CF5C3251B5E9E47002852CF /* RACObserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACObserve.swift; sourceTree = "<group>"; };
+		6CF5C3261B5E9E47002852CF /* RACSignal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RACSignal+Extensions.swift"; sourceTree = "<group>"; };
+		6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdiomModel.swift; path = ../IdiomModel.swift; sourceTree = "<group>"; };
 		6CFF676E1B5D319800A58E12 /* IdiomGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdiomGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptIdomsListViewController.swift; sourceTree = "<group>"; };
 		A8E937C5AA0B5F96D62DE9D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2AF9A387AD0BF7FA514214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +112,14 @@
 		6C64F10E1B5B38300022510B /* Resoure */ = {
 			isa = PBXGroup;
 			children = (
-				6C64F10F1B5B38300022510B /* First.png */,
+				6C0C7EA11B648AD700797267 /* promptBack.png */,
+				6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */,
+				6C498E801B63CF6D00999988 /* btnprompt@2x.png */,
+				6C498E7A1B63CC9A00999988 /* gameback.png */,
+				6C520AEC1B6291CD0058A0A5 /* idioms.db */,
+				6CA54B411B5FBE7F002CE7F6 /* Btn@2x.png */,
+				6CA54B3E1B5FBC7F002CE7F6 /* Btn_select@2x.png */,
+				6CD1B0EF1B5FD7E30018480C /* GameBegin.png */,
 			);
 			path = Resoure;
 			sourceTree = "<group>";
@@ -98,6 +127,7 @@
 		6C767D951B59FDDA00DD4289 = {
 			isa = PBXGroup;
 			children = (
+				6CF5C3231B5E9E24002852CF /* Utils */,
 				6CC47A351B5D17CF00EBE33F /* DAL */,
 				6CC47A301B5D156100EBE33F /* BLL */,
 				6C64F10E1B5B38300022510B /* Resoure */,
@@ -161,8 +191,10 @@
 		6C767DC61B5A05F200DD4289 /* ControlView */ = {
 			isa = PBXGroup;
 			children = (
+				6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */,
 				6C64F1131B5B46140022510B /* GameViewController.swift */,
 				6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */,
+				A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */,
 			);
 			name = ControlView;
 			sourceTree = "<group>";
@@ -189,7 +221,6 @@
 			children = (
 				6C64F1111B5B426E0022510B /* IdiomInfo.swift */,
 				6CC47A381B5D28B900EBE33F /* WordInfo.swift */,
-				6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -200,6 +231,16 @@
 				6CC47A361B5D180A00EBE33F /* IdiomProtocolForSQL.swift */,
 			);
 			name = DAL;
+			sourceTree = "<group>";
+		};
+		6CF5C3231B5E9E24002852CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CF5C3241B5E9E47002852CF /* RAC.swift */,
+				6CF5C3251B5E9E47002852CF /* RACObserve.swift */,
+				6CF5C3261B5E9E47002852CF /* RACSignal+Extensions.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		D1506843EAE736C08276D740 /* Frameworks */ = {
@@ -292,10 +333,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C64F1101B5B38300022510B /* First.png in Resources */,
+				6CA54B401B5FBC7F002CE7F6 /* Btn_select@2x.png in Resources */,
+				6C0C7EA21B648AD700797267 /* promptBack.png in Resources */,
 				6C767DA91B59FDDB00DD4289 /* Main.storyboard in Resources */,
+				6C498E7E1B63CC9A00999988 /* gameback.png in Resources */,
+				6C498E821B63CF6D00999988 /* btnprompt@2x.png in Resources */,
+				6C520AED1B6291CD0058A0A5 /* idioms.db in Resources */,
 				6C767DAE1B59FDDB00DD4289 /* LaunchScreen.xib in Resources */,
+				6CD1B0F01B5FD7E30018480C /* GameBegin.png in Resources */,
+				6CA54B421B5FBE7F002CE7F6 /* Btn@2x.png in Resources */,
 				6C767DAB1B59FDDB00DD4289 /* Images.xcassets in Resources */,
+				6C498E811B63CF6D00999988 /* btnbegin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,12 +394,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D449EC1B6234A0000B5C6D /* PromptIdomsListViewController.swift in Sources */,
+				6CF5C3271B5E9E47002852CF /* RAC.swift in Sources */,
 				6CC47A371B5D180A00EBE33F /* IdiomProtocolForSQL.swift in Sources */,
 				6CC47A391B5D28B900EBE33F /* WordInfo.swift in Sources */,
 				6CC47A341B5D16C500EBE33F /* IdiomProtocol.swift in Sources */,
 				6C64F1141B5B46140022510B /* GameViewController.swift in Sources */,
 				6C64F1161B5B476A0022510B /* GameCollectionViewCell.swift in Sources */,
+				6CF5C3281B5E9E47002852CF /* RACObserve.swift in Sources */,
 				6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */,
+				6CF5C3291B5E9E47002852CF /* RACSignal+Extensions.swift in Sources */,
 				6C767DA61B59FDDB00DD4289 /* ViewController.swift in Sources */,
 				6C767DA41B59FDDB00DD4289 /* AppDelegate.swift in Sources */,
 				6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */,
@@ -487,6 +539,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IdiomGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IdiomGame/IdiomGame-Bridging-Header.h";
@@ -501,6 +554,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = IdiomGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IdiomGame/IdiomGame-Bridging-Header.h";

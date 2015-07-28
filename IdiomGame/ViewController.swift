@@ -12,17 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        var model = IdiomInfo(aPinyin: "pin", aHanzi: "hanzi", aJieshi: "jieshi", aBiaoji: "biaoji" ,aChengyuId:1)
         
-        
-        
-        
-//        var model  = IdiomData()
-//        
-//        model.jieshi = "asdf"
-        
+    }
+    @IBAction func promptIdiomsTable(sender: AnyObject) {
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
