@@ -10,13 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var neverApearIdioms:String!
+    
+    @IBOutlet var label: UILabel!
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-    }
-    @IBAction func promptIdiomsTable(sender: AnyObject) {
-    
-    
+        super.viewDidLoad()
+        let idiomProtocolSQL = IdiomProtocolForSQL.new()
+        self.neverApearIdioms = idiomProtocolSQL.neverAppearedIndiomCount()
+        
+        let str :String = "恭喜您,你还差 \(self.neverApearIdioms) 个成语就可以完成小学所以常用成语"
+        var attributedStr = NSMutableAttributedString(string:str)
+            attributedStr.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(20), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
+        attributedStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
+        
+        self.label.attributedText =  attributedStr
+        
     }
 
     override func didReceiveMemoryWarning() {

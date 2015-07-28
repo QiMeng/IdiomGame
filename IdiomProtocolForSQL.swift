@@ -32,7 +32,17 @@ class IdiomProtocolForSQL: NSObject , IdiomProtocol {
         return feedlogDb
         
     }
-    
+    func neverAppearedIndiomCount()-> String
+    {
+        var count = "0"
+        let db = self.openDB()
+        let rs = db.executeQuery("select count(*) as Count from idioms where biaoji = '0'", withArgumentsInArray:nil)
+        if rs.next()
+        {
+            count = rs.stringForColumn("Count")
+        }
+        return count
+    }
     func randomIdiomForGame() -> RACSignal {
         
         return RACSignal.createSignal({ (subscriber: RACSubscriber!) -> RACDisposable! in

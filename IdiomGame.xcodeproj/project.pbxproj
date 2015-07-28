@@ -33,6 +33,10 @@
 		6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */; };
 		96F6B68F0BBB02B95C2D7F6E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E04A6FC4A99A43A6218F42 /* libPods.a */; };
 		A3D449EC1B6234A0000B5C6D /* PromptIdomsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */; };
+		A3DA438D1B6766E200ABE27A /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DA438C1B6766E200ABE27A /* SoundModel.swift */; };
+		A3DA438F1B67697500ABE27A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DA438E1B67697500ABE27A /* AVFoundation.framework */; };
+		A3DA43921B676AD600ABE27A /* 1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A3DA43901B676AD600ABE27A /* 1.aiff */; };
+		A3DA43931B676AD600ABE27A /* 2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A3DA43911B676AD600ABE27A /* 2.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdiomModel.swift; path = ../IdiomModel.swift; sourceTree = "<group>"; };
 		6CFF676E1B5D319800A58E12 /* IdiomGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdiomGame-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptIdomsListViewController.swift; sourceTree = "<group>"; };
+		A3DA438C1B6766E200ABE27A /* SoundModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		A3DA438E1B67697500ABE27A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A3DA43901B676AD600ABE27A /* 1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 1.aiff; sourceTree = "<group>"; };
+		A3DA43911B676AD600ABE27A /* 2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 2.aiff; sourceTree = "<group>"; };
 		A8E937C5AA0B5F96D62DE9D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2AF9A387AD0BF7FA514214 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DA438F1B67697500ABE27A /* AVFoundation.framework in Frameworks */,
 				96F6B68F0BBB02B95C2D7F6E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +121,8 @@
 		6C64F10E1B5B38300022510B /* Resoure */ = {
 			isa = PBXGroup;
 			children = (
+				A3DA43901B676AD600ABE27A /* 1.aiff */,
+				A3DA43911B676AD600ABE27A /* 2.aiff */,
 				6C0C7EA11B648AD700797267 /* promptBack.png */,
 				6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */,
 				6C498E801B63CF6D00999988 /* btnprompt@2x.png */,
@@ -192,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				6CFF676C1B5D30EE00A58E12 /* IdiomModel.swift */,
+				A3DA438C1B6766E200ABE27A /* SoundModel.swift */,
 				6C64F1131B5B46140022510B /* GameViewController.swift */,
 				6C64F1151B5B476A0022510B /* GameCollectionViewCell.swift */,
 				A3D449EB1B6234A0000B5C6D /* PromptIdomsListViewController.swift */,
@@ -246,6 +258,7 @@
 		D1506843EAE736C08276D740 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3DA438E1B67697500ABE27A /* AVFoundation.framework */,
 				32E04A6FC4A99A43A6218F42 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -333,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DA43931B676AD600ABE27A /* 2.aiff in Resources */,
 				6CA54B401B5FBC7F002CE7F6 /* Btn_select@2x.png in Resources */,
 				6C0C7EA21B648AD700797267 /* promptBack.png in Resources */,
 				6C767DA91B59FDDB00DD4289 /* Main.storyboard in Resources */,
@@ -340,6 +354,7 @@
 				6C498E821B63CF6D00999988 /* btnprompt@2x.png in Resources */,
 				6C520AED1B6291CD0058A0A5 /* idioms.db in Resources */,
 				6C767DAE1B59FDDB00DD4289 /* LaunchScreen.xib in Resources */,
+				A3DA43921B676AD600ABE27A /* 1.aiff in Resources */,
 				6CD1B0F01B5FD7E30018480C /* GameBegin.png in Resources */,
 				6CA54B421B5FBE7F002CE7F6 /* Btn@2x.png in Resources */,
 				6C767DAB1B59FDDB00DD4289 /* Images.xcassets in Resources */,
@@ -405,6 +420,7 @@
 				6CFF676D1B5D30EE00A58E12 /* IdiomModel.swift in Sources */,
 				6CF5C3291B5E9E47002852CF /* RACSignal+Extensions.swift in Sources */,
 				6C767DA61B59FDDB00DD4289 /* ViewController.swift in Sources */,
+				A3DA438D1B6766E200ABE27A /* SoundModel.swift in Sources */,
 				6C767DA41B59FDDB00DD4289 /* AppDelegate.swift in Sources */,
 				6C64F1121B5B426E0022510B /* IdiomInfo.swift in Sources */,
 			);

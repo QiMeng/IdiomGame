@@ -20,6 +20,8 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         self.idiomProtocolSQL = IdiomProtocolForSQL.new()
         
         self.viewModel = IdiomModel(aIdiomProtocol: self.idiomProtocolSQL)
@@ -67,8 +69,8 @@ class GameViewController: UIViewController {
     }
     @IBAction func musicSwitch(sender: UIButton) {
         //音乐开关
-        
-        
+        sender.selected = !sender.selected
+        SoundModel().soundBackPlay(sender.selected)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,6 +100,7 @@ class GameViewController: UIViewController {
             cell.initTitleClickBlock({[weak self] (awordInfo, selected) -> () in
 
                 self!.viewModel.addOrRemoveWordToSelectedWords(awordInfo, isAdd: selected)
+                SoundModel().soundTouchBtn()
                 
             })
         }

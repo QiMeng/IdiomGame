@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -21,25 +21,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameBegin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uqh-e7-33q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="最佳成绩: 89分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1U-3I-MP1">
-                                <rect key="frame" x="50" y="169" width="274" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您,你还差 300 个成语就可以完成小学所以常用成语" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50d-3o-kLT">
-                                <rect key="frame" x="50" y="199" width="274" height="12"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If2-PT-sFI">
-                                <rect key="frame" x="108" y="256" width="159" height="48"/>
+                                <rect key="frame" x="108" y="250" width="159" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="VT0-AG-CQz"/>
-                                </constraints>
                                 <state key="normal" backgroundImage="btnbegin.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,11 +32,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LT-BH-WQ7">
-                                <rect key="frame" x="108" y="324" width="159" height="48"/>
+                                <rect key="frame" x="108" y="318" width="159" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="GBQ-Ez-z6j"/>
-                                </constraints>
                                 <state key="normal" backgroundImage="btnprompt.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -60,29 +41,35 @@
                                     <segue destination="SsV-3T-wMC" kind="modal" id="LZH-1Z-ex2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您,你还差 300 个成语就可以完成小学所以常用成语" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50d-3o-kLT">
+                                <rect key="frame" x="60" y="170" width="255" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="byW-mP-fEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="50d-3o-kLT" firstAttribute="top" secondItem="W1U-3I-MP1" secondAttribute="bottom" constant="9" id="0zJ-9J-ffn"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="1nO-8q-4IO"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="leading" secondItem="2LT-BH-WQ7" secondAttribute="leading" id="D2R-ZL-i4d"/>
-                            <constraint firstItem="Uqh-e7-33q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DtN-XC-h81"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W1U-3I-MP1" secondAttribute="trailing" constant="35" id="QAQ-UJ-j5D"/>
-                            <constraint firstItem="Uqh-e7-33q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RWl-iQ-lAC"/>
-                            <constraint firstItem="2LT-BH-WQ7" firstAttribute="top" secondItem="If2-PT-sFI" secondAttribute="bottom" constant="20" id="UoS-xv-4ab"/>
-                            <constraint firstItem="50d-3o-kLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="bke-Ac-GYc"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="top" secondItem="50d-3o-kLT" secondAttribute="bottom" constant="45" id="brV-gF-mX0"/>
-                            <constraint firstAttribute="trailing" secondItem="Uqh-e7-33q" secondAttribute="trailing" id="eFy-w2-yga"/>
-                            <constraint firstItem="W1U-3I-MP1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="149" id="gfC-pM-yaa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uqh-e7-33q" secondAttribute="bottom" id="jpY-MP-DGr"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="trailing" secondItem="2LT-BH-WQ7" secondAttribute="trailing" id="nUj-vR-m0R"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="centerX" secondItem="50d-3o-kLT" secondAttribute="centerX" id="u5x-IW-FNH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="50d-3o-kLT" secondAttribute="trailing" constant="35" id="vWA-ZC-LNJ"/>
-                            <constraint firstItem="If2-PT-sFI" firstAttribute="top" secondItem="50d-3o-kLT" secondAttribute="bottom" constant="45" id="yHc-VJ-06x"/>
-                            <constraint firstItem="W1U-3I-MP1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="ytp-KV-2ek"/>
+                            <constraint firstItem="Uqh-e7-33q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4RC-hO-DlA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uqh-e7-33q" secondAttribute="bottom" id="5XT-h9-wwZ"/>
+                            <constraint firstItem="50d-3o-kLT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="89d-Dp-8Ju"/>
+                            <constraint firstAttribute="trailing" secondItem="Uqh-e7-33q" secondAttribute="trailing" id="9dh-AS-28Y"/>
+                            <constraint firstItem="If2-PT-sFI" firstAttribute="centerX" secondItem="2LT-BH-WQ7" secondAttribute="centerX" id="A2x-SP-viz"/>
+                            <constraint firstItem="50d-3o-kLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="OjK-Cb-72Z"/>
+                            <constraint firstAttribute="trailing" secondItem="50d-3o-kLT" secondAttribute="trailing" constant="60" id="USj-NA-CBG"/>
+                            <constraint firstItem="If2-PT-sFI" firstAttribute="top" secondItem="50d-3o-kLT" secondAttribute="bottom" constant="20" id="Xgn-OG-ffT"/>
+                            <constraint firstItem="If2-PT-sFI" firstAttribute="centerX" secondItem="50d-3o-kLT" secondAttribute="centerX" constant="0.5" id="i6v-d6-d8H"/>
+                            <constraint firstItem="Uqh-e7-33q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="p4g-5e-0ri"/>
+                            <constraint firstItem="2LT-BH-WQ7" firstAttribute="top" secondItem="If2-PT-sFI" secondAttribute="bottom" constant="20" id="sNO-by-BAJ"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="50d-3o-kLT" id="G4B-C9-Qay"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
