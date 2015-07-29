@@ -25,7 +25,13 @@ class ViewController: UIViewController {
         attributedStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
         
         self.label.attributedText =  attributedStr
+        self.label.font = UIFont(name: "myname", size: 15)
         
+        let fonts = UIFont.familyNames()
+        
+//        var fontFamily : NSString = "myname" as NSString
+//        var fontNames = UIFont.fontNamesForFamilyName(fontFamily as String)
+
     }
 
     override func didReceiveMemoryWarning() {
