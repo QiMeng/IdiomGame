@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         attributedStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
         
         self.label.attributedText =  attributedStr
-        self.label.font = UIFont(name: "myname", size: 15)
+        self.label.font = UIFont(name: "onryou", size: 20)
         
         let fonts = UIFont.familyNames()
         
