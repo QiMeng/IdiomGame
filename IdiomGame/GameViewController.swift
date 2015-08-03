@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet var titleforIdiom: UILabel!
     @IBOutlet var explainForIdiom: UILabel!
     @IBOutlet weak var collectionview: UICollectionView!
+    var judgeRightIdiom:Bool = true
     
     let ALLCELLS = 36
     dynamic var viewModel: IdiomModel!
@@ -39,11 +40,13 @@ class GameViewController: UIViewController {
                 
                 let idiom = value2 as! IdiomInfo
                 self!.titleforIdiom.text = idiom.hanzi
+                self!.titleforIdiom.textColor = UIColor.blackColor()
                 self!.explainForIdiom.text = idiom.jieshi
-                
+                self!.explainForIdiom.textColor = UIColor.blackColor()
                 let rightidiom = idiom.hanzi?.hasPrefix("错误成语")
-                self!.soundModel.soundRightIdiom(rightidiom!)
-           
+                self!.soundModel.soundRightIdiom(!rightidiom!)
+                self!.judgeRightIdiom = !rightidiom!;
+            
             })
             self!.collectionview.reloadData()
             
@@ -62,8 +65,11 @@ class GameViewController: UIViewController {
         if self.viewModel.idioms.count > 0
         {
             let promptIdiom = self.viewModel.idioms[0]
-            self.titleforIdiom.text = "提示：" + promptIdiom.hanzi!
+            self.titleforIdiom.text =  promptIdiom.hanzi!
+            self.titleforIdiom.textColor = UIColor.redColor()
             self.explainForIdiom.text = promptIdiom.jieshi
+            self.explainForIdiom.textColor = UIColor.redColor()
+            
             
             //提示的成语要在数据库中标记
             self.idiomProtocolSQL.updateIdiomWithBiaoji("2", achenyuId: promptIdiom.chengyuId!)
@@ -98,7 +104,7 @@ class GameViewController: UIViewController {
         }else
         {
             let wordIndex = indexPath.row - (ALLCELLS - self.viewModel.words.count)
-            cell.settitle(self.viewModel.words[wordIndex])
+            cell.settitle(self.viewModel.words[wordIndex], arightidiom: self.judgeRightIdiom)
             
             cell.initTitleClickBlock({[weak self] (awordInfo, selected) -> () in
 

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let str :String = "恭喜您,你还差 \(self.neverApearIdioms) 个成语就可以完成小学所以常用成语"
         var attributedStr = NSMutableAttributedString(string:str)
             attributedStr.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(20), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
-        attributedStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
+            attributedStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(count("恭喜您,你还差 "),count(self.neverApearIdioms)))
         
         self.label.attributedText =  attributedStr
         self.label.font = UIFont(name: "onryou", size: 20)
