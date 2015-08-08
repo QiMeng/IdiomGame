@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6C0C7EA21B648AD700797267 /* promptBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0C7EA11B648AD700797267 /* promptBack.png */; };
+		6C2A41301B758DAE00980B48 /* ms_backBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A412F1B758DAE00980B48 /* ms_backBtn@2x.png */; };
+		6C2A41341B75C60600980B48 /* shouye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A41311B75C60600980B48 /* shouye@2x.png */; };
+		6C2A41351B75C60600980B48 /* tishi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A41321B75C60600980B48 /* tishi@2x.png */; };
+		6C2A41361B75C60600980B48 /* yinxiao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A41331B75C60600980B48 /* yinxiao@2x.png */; };
+		6C2A41381B75CE1D00980B48 /* yinxiao_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C2A41371B75CE1D00980B48 /* yinxiao_select@2x.png */; };
 		6C498E7E1B63CC9A00999988 /* gameback.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E7A1B63CC9A00999988 /* gameback.png */; };
 		6C498E811B63CF6D00999988 /* btnbegin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */; };
 		6C498E821B63CF6D00999988 /* btnprompt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C498E801B63CF6D00999988 /* btnprompt@2x.png */; };
@@ -55,6 +60,11 @@
 /* Begin PBXFileReference section */
 		32E04A6FC4A99A43A6218F42 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0C7EA11B648AD700797267 /* promptBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = promptBack.png; sourceTree = "<group>"; };
+		6C2A412F1B758DAE00980B48 /* ms_backBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms_backBtn@2x.png"; sourceTree = "<group>"; };
+		6C2A41311B75C60600980B48 /* shouye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shouye@2x.png"; sourceTree = "<group>"; };
+		6C2A41321B75C60600980B48 /* tishi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tishi@2x.png"; sourceTree = "<group>"; };
+		6C2A41331B75C60600980B48 /* yinxiao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yinxiao@2x.png"; sourceTree = "<group>"; };
+		6C2A41371B75CE1D00980B48 /* yinxiao_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yinxiao_select@2x.png"; sourceTree = "<group>"; };
 		6C498E7A1B63CC9A00999988 /* gameback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameback.png; sourceTree = "<group>"; };
 		6C498E7F1B63CF6D00999988 /* btnbegin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnbegin@2x.png"; sourceTree = "<group>"; };
 		6C498E801B63CF6D00999988 /* btnprompt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnprompt@2x.png"; sourceTree = "<group>"; };
@@ -128,6 +138,11 @@
 		6C64F10E1B5B38300022510B /* Resoure */ = {
 			isa = PBXGroup;
 			children = (
+				6C2A41371B75CE1D00980B48 /* yinxiao_select@2x.png */,
+				6C2A41311B75C60600980B48 /* shouye@2x.png */,
+				6C2A41321B75C60600980B48 /* tishi@2x.png */,
+				6C2A41331B75C60600980B48 /* yinxiao@2x.png */,
+				6C2A412F1B758DAE00980B48 /* ms_backBtn@2x.png */,
 				A3DA43901B676AD600ABE27A /* 1.aiff */,
 				A3DA43911B676AD600ABE27A /* 2.aiff */,
 				6C0C7EA11B648AD700797267 /* promptBack.png */,
@@ -356,7 +371,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				A39438201B6B0AD1007F9471 /* myname.ttf in Resources */,
+=======
+				6C2A41341B75C60600980B48 /* shouye@2x.png in Resources */,
+				6C2A41301B758DAE00980B48 /* ms_backBtn@2x.png in Resources */,
+>>>>>>> Stashed changes
 				A3DA43931B676AD600ABE27A /* 2.aiff in Resources */,
 				6CA54B401B5FBC7F002CE7F6 /* Btn_select@2x.png in Resources */,
 				A39438221B6B0D68007F9471 /* 16=钟齐陈伟勋硬笔行书字库.ttf in Resources */,
@@ -364,8 +384,11 @@
 				6C767DA91B59FDDB00DD4289 /* Main.storyboard in Resources */,
 				6C498E7E1B63CC9A00999988 /* gameback.png in Resources */,
 				6C498E821B63CF6D00999988 /* btnprompt@2x.png in Resources */,
+				6C2A41381B75CE1D00980B48 /* yinxiao_select@2x.png in Resources */,
 				6C520AED1B6291CD0058A0A5 /* idioms.db in Resources */,
 				6C767DAE1B59FDDB00DD4289 /* LaunchScreen.xib in Resources */,
+				6C2A41361B75C60600980B48 /* yinxiao@2x.png in Resources */,
+				6C2A41351B75C60600980B48 /* tishi@2x.png in Resources */,
 				A3DA43921B676AD600ABE27A /* 1.aiff in Resources */,
 				6CD1B0F01B5FD7E30018480C /* GameBegin.png in Resources */,
 				6CA54B421B5FBE7F002CE7F6 /* Btn@2x.png in Resources */,

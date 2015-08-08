@@ -14,6 +14,7 @@ class PromptIdomsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "提示过的成语"
         let idiomProtocolSQL = IdiomProtocolForSQL.new()
         self.promptIdioms = idiomProtocolSQL.promptIdioms()
         

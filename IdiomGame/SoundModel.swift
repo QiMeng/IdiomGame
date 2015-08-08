@@ -14,6 +14,8 @@ class SoundModel: NSObject,AVAudioPlayerDelegate {
     var audioPlayerTouchBtn:AVAudioPlayer!
     var audioPlayerIdiom:AVAudioPlayer!
     
+    var audioPlayerTouchBtnSound:Bool = true
+    
     func loadSoundBack(filename:NSString) {
         let url = NSBundle.mainBundle().URLForResource(filename as String, withExtension: "aiff")
         var error:NSError? = nil
@@ -28,15 +30,16 @@ class SoundModel: NSObject,AVAudioPlayerDelegate {
     }
     func soundBackPlay(playSound:Bool)
     {
-        self.loadSoundBack("1")
-        self.audioPlayerBack.numberOfLoops = -1
-        if playSound
-        {
-            self.audioPlayerBack.play()
-        }else
-        {
-            self.audioPlayerBack.stop()
-        }
+        self.audioPlayerTouchBtnSound = playSound
+//        self.loadSoundBack("1")
+//        self.audioPlayerBack.numberOfLoops = -1
+//        if playSound
+//        {
+//            self.audioPlayerBack.play()
+//        }else
+//        {
+//            self.audioPlayerBack.stop()
+//        }
     }
     
     func loadSoundTouchBtn()
@@ -55,8 +58,12 @@ class SoundModel: NSObject,AVAudioPlayerDelegate {
     }
     func soundTouchBtn()
     {
-        self.loadSoundTouchBtn()
-        self.audioPlayerTouchBtn.play()
+        if self.audioPlayerTouchBtnSound
+        {
+            self.loadSoundTouchBtn()
+            self.audioPlayerTouchBtn.play()
+
+        }
     }
     
 

@@ -79,7 +79,7 @@ class GameViewController: UIViewController {
     @IBAction func musicSwitch(sender: UIButton) {
         //音乐开关
         sender.selected = !sender.selected
-        self.soundModel.soundBackPlay(sender.selected)
+        self.soundModel.soundBackPlay(!sender.selected)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

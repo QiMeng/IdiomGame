@@ -115,7 +115,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gsl-ms-2EP">
-                        <barButtonItem key="leftBarButtonItem" title="返回" id="6Xe-uO-z3O">
+                        <barButtonItem key="leftBarButtonItem" image="ms_backBtn.png" id="6Xe-uO-z3O">
                             <connections>
                                 <action selector="backtoHome:" destination="4PK-N8-pKl" id="uuv-CK-LDo"/>
                             </connections>
@@ -196,27 +196,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqr-a8-gmG">
                                 <rect key="frame" x="0.0" y="608" width="375" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-3C-h15">
-                                        <rect key="frame" x="82" y="15" width="30" height="30"/>
-                                        <state key="normal" title="提示">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-3C-h15">
+                                        <rect key="frame" x="38" y="10" width="76" height="25"/>
+                                        <state key="normal" image="tishi.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="promptIdiom:" destination="IqW-Eb-Kfz" eventType="touchUpInside" id="YnI-8i-1ZC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liH-U2-dT3">
-                                        <rect key="frame" x="262" y="15" width="30" height="30"/>
-                                        <state key="normal" title="音效">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liH-U2-dT3">
+                                        <rect key="frame" x="260" y="10" width="76" height="25"/>
+                                        <state key="normal" image="yinxiao.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="yinxiao_select.png"/>
                                         <connections>
                                             <action selector="musicSwitch:" destination="IqW-Eb-Kfz" eventType="touchUpInside" id="WKh-SQ-G4j"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-Jj-anp">
-                                        <rect key="frame" x="172" y="15" width="30" height="30"/>
-                                        <state key="normal" title="首页">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-Jj-anp">
+                                        <rect key="frame" x="149" y="10" width="76" height="25"/>
+                                        <state key="normal" image="shouye.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -226,10 +227,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="6x4-Jj-anp" firstAttribute="leading" secondItem="iGW-3C-h15" secondAttribute="trailing" constant="60" id="HEw-SC-Bx8"/>
-                                    <constraint firstItem="liH-U2-dT3" firstAttribute="leading" secondItem="6x4-Jj-anp" secondAttribute="trailing" constant="60" id="ZiE-I4-trq"/>
+                                    <constraint firstItem="6x4-Jj-anp" firstAttribute="leading" secondItem="iGW-3C-h15" secondAttribute="trailing" constant="35" id="HEw-SC-Bx8"/>
+                                    <constraint firstItem="iGW-3C-h15" firstAttribute="top" secondItem="dqr-a8-gmG" secondAttribute="top" constant="10" id="IC5-e0-JOM"/>
+                                    <constraint firstItem="liH-U2-dT3" firstAttribute="leading" secondItem="6x4-Jj-anp" secondAttribute="trailing" constant="35" id="ZiE-I4-trq"/>
                                     <constraint firstAttribute="height" constant="60" id="g28-m0-eFH"/>
-                                    <constraint firstItem="6x4-Jj-anp" firstAttribute="centerY" secondItem="dqr-a8-gmG" secondAttribute="centerY" id="jGt-mw-UhP"/>
                                     <constraint firstAttribute="centerX" secondItem="6x4-Jj-anp" secondAttribute="centerX" constant="0.5" id="nW5-ik-ya8"/>
                                     <constraint firstItem="6x4-Jj-anp" firstAttribute="baseline" secondItem="iGW-3C-h15" secondAttribute="baseline" id="xEP-Sn-R00"/>
                                     <constraint firstItem="6x4-Jj-anp" firstAttribute="baseline" secondItem="liH-U2-dT3" secondAttribute="baseline" id="z4E-nf-KZO"/>
@@ -241,8 +242,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< Updated upstream
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解释：解释这个成语的意思" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-lI-vdj">
                                 <rect key="frame" x="37" y="106" width="300" height="17"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解释：这个成语是什么意思" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-lI-vdj">
+                                <rect key="frame" x="37" y="105.5" width="300" height="17"/>
+>>>>>>> Stashed changes
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -303,5 +309,10 @@
         <image name="btnbegin.png" width="159" height="48"/>
         <image name="btnprompt.png" width="159" height="48"/>
         <image name="gameback.png" width="640" height="1136"/>
+        <image name="ms_backBtn.png" width="12" height="21"/>
+        <image name="shouye.png" width="76" height="25"/>
+        <image name="tishi.png" width="76" height="25"/>
+        <image name="yinxiao.png" width="76" height="25"/>
+        <image name="yinxiao_select.png" width="76" height="25"/>
     </resources>
 </document>
