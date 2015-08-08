@@ -44,7 +44,7 @@ class GameViewController: UIViewController {
                 self!.explainForIdiom.text = idiom.jieshi
                 self!.explainForIdiom.textColor = UIColor.blackColor()
                 let rightidiom = idiom.hanzi?.hasPrefix("错误成语")
-                self!.soundModel.soundRightIdiom(!rightidiom!)
+//                self!.soundModel.soundRightIdiom(!rightidiom!)
                 self!.judgeRightIdiom = !rightidiom!;
             
             })

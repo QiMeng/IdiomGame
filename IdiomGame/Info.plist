@@ -40,8 +40,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIAppFonts</key>
-	<array>
-		<string>myname.ttf</string>
-	</array>
+	<array/>
 </dict>
 </plist>

@@ -79,7 +79,7 @@ class SoundModel: NSObject,AVAudioPlayerDelegate {
         
         self.audioPlayerIdiom = AVAudioPlayer(contentsOfURL: url, error: &error)
         self.audioPlayerIdiom.prepareToPlay()
-//        self.audioPlayerTouchBtn.delegate = self
+        self.audioPlayerTouchBtn.delegate = self
     }
     func soundRightIdiom(arightdiom:Bool)
     {
